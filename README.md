@@ -65,6 +65,8 @@ React app runs at: `http://localhost:3000`
 
 ---
 
+##POSTMAN COLLECTION = https://github.com/shuhaki/E-shoping-cart/blob/main/ShoppingCart.postman_collection.json
+
 ## 🔁 API Collection (Postman)
 
 Use the included Postman collection to test:
