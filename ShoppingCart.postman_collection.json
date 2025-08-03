@@ -1,0 +1,113 @@
+{
+  "info": {
+    "name": "ShoppingCart API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login User",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/users/login",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "api",
+            "users",
+            "login"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"username\": \"john\", \"password\": \"1234\" }"
+        }
+      }
+    },
+    {
+      "name": "Create Item",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/items",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "api",
+            "items"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"name\": \"Book\", \"status\": \"available\" }"
+        }
+      }
+    },
+    {
+      "name": "Add to Cart",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/carts",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "api",
+            "carts"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"USER_ID\", \"item_id\": \"ITEM_ID\" }"
+        }
+      }
+    },
+    {
+      "name": "Create Order",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/orders",
+          "host": [
+            "localhost:8080"
+          ],
+          "path": [
+            "api",
+            "orders"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"USER_ID\" }"
+        }
+      }
+    }
+  ]
+}
